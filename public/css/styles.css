@@ -37,12 +37,13 @@ header nav{
     font-size: 12px;
     display:inline-flex;
     
+    
 }
 
 header ul li{
     list-style-type: none;
     display:list-item
-        
+  
       }
 }
 
@@ -57,7 +58,6 @@ header ul li a{
  
 header ul li {
     margin-left: 10%;
-   
   }
   
 
@@ -173,6 +173,7 @@ article div.main-article {
 .box-price .discount {
     width: 70%;
 }
+/*vista todas, a partir de */
 @media (min-width: 361px){
     header nav{ 
         display: block;
