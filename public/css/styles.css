@@ -52,7 +52,7 @@ header ul li a{
     color: black;
     text-decoration: underline;
     list-style-type: none;
-    display:contents;
+    display:flex;
     
 }
  
@@ -237,7 +237,8 @@ p{
 
 * {
     box-sizing: border-box;
-    margin:0
+    margin:10px
+    
 }
 
 footer div{
@@ -261,3 +262,4 @@ footer div i{
 footer h2{
     padding: 10px;
 }
+
