@@ -233,16 +233,31 @@ p{
     border: none;
     outline: none;
 }
+/*footer*/
 
-.footer {
+* {
+    box-sizing: border-box;
+    margin:0
+}
+
+footer div{
     margin-top: 5em;
     padding-bottom: 2em;
+    letter-spacing: 0.2em;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color:#ebebeb;
+    text-align: center;
+    margin-top: auto;
+    margin-top: 30px;
+    width: 70%;
+     
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+footer div i{
+    font-size: 2em;
+    color: #1259c3;;
+    margin-bottom: 10px;
 }
-footer {
-    display: block;
+footer h2{
+    padding: 10px;
 }
