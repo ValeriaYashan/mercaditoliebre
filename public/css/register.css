@@ -7,29 +7,29 @@ form {
     
 }
 
-.form-control {
+form-control {
     width: 100%;
     flex-direction: column;
     margin-bottom: 3px;
     padding: 10px;
 }
 
-.form-control label {
+form-control label {
     width: 100%;
 }
-.form-control input {
+form-control input {
     width: 100%;
     transition: border 2s;
 }
-.form-control input:focus {
+form-control input:focus {
     border: aqua 5px solid;
     outline: none;
 }
-.form-control input:hover {
+form-control input:hover {
     border: blue 5px solid;
 }
 
-.enviar {
+.nviar {
     background-color: grey;
     border-radius: 5px;
     padding: 5px;
