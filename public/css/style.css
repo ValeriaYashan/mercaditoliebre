@@ -1,223 +1,211 @@
-*{
+/*estilos generales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: roboto ,Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-}
-
-h3{
+h2{
     font-size: 24px;
+    padding: 20px 0px;
 }
-
 p{
     font-size: 12px;
 }
-div.top-header{
-    padding: 5%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
-header{
-    background-color:#EAC926;;
-}
+/* Header*/
 
-header div.logo{
-    width: 50%;
-}
+.main-header {
 
-header div.logo{
-    padding: 10px;
+    background-color: #EAC926;
+    padding: 20px;
 }
-header nav{
-    font-size: 12px;
-    display:inline-flex;
-    
-    
+.main-logo{
+    width: 200px;
+    padding: 20px;
 }
-
-header ul li{
-    list-style-type: none;
-    display:list-item
-  
-      }
-}
-
-header ul li a{
-    text-decoration: none;
-    color: black;
-    text-decoration: underline;
-    list-style-type: none;
-    display:flex;
-    
-}
- 
-header ul li {
-    margin-left: 10%;
-  }
-  
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: left;
-    margin-top: 10px;
-}
-
-div.burger-menu{
+.header-text{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
     text-align: center;
 }
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
+.main-navbar{
+    display: none;
 }
-
-.price{
-    font-size: 18px;
-}
-
-.discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
-}
-
-h3,
-.description{
-    color: #666;
-}
-
-.description {
-    opacity: 0;
-    transition: all 2s;
-    margin-top: 20px;
-}
-
-section.banner img{
-    width: 100%;
-}
-img {
-    border-style: none;
-}
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-
-main section article {
-    background-color: #fff;    
-    margin: 10px 0px;
-}
-
-main section article img{
-    width: 100%;
-}
-
-main section article i,
-.discount{
-    color: #39b54a;
-}
-
-main section article i{
+.hamburger-btn{
+    background-color: #03264C;
+    color: white;
     display: block;
-    font-size: 16px;
-    padding: 5px;
-    height: 30px;
-    width: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 30%;
+    max-width: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    font-size: 17px;
+    padding: 5px 0px;
 }
 
-main section h3{
-    margin: 20px 0px;
-}
-
-article div.main-article {
-    width: 100%;
-    border-top: 1px solid #ebebeb;
-    padding: 5px;
-    position: relative;
-}
-.box-price {
-    display: flex;
-}
-.box-price .price {
-    width: 30%;
-}
-.box-price .discount {
-    width: 70%;
-}
-/*vista todas, a partir de */
-@media (min-width: 361px){
-    header nav{ 
-        display: block;
-    }
-    .products {
+@media (min-width: 768px){
+    .main-header-top-bar{
+        
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .header-text{
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburger-btn{
+        display: none;
+    }
+    .main-navbar{        
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-navbar{
+        display: flex;
         justify-content: space-around;
     }
-    .products article {
-        width: 45%;
-        transition: box-shadow 2s;
+    .left-navbar li{
+        margin: 0px 5px;
     }
+    .rigth-navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .rigth-navbar li{
+        margin: 0px 5px;
+    }
+}
+@media (min-width: 1200px){
+    .main-header-top-bar , .main-navbar{
+        
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+    }
+    .header-text{
+        max-width: none;
+        font-size: 18px;
+    }
+    .main-navbar li{
+        font-size: 16px;
+        margin: 0px 16px;
+        font-weight: 400;
+    }
+}
+
+
+/*banner*/
+div img.banner{
+    width: 100vw;
     
-    main section article:hover .description {
-        opacity: 1;
-    }
-
-    main section article:hover {
-        box-shadow: 0px 0px 25px rgb(100, 100, 100);
-    }
-}
-/*en vista desktop se deben ver los cuatro productos*/
-@media (min-width: 769px){
-    .products article {
-        width: 22%;
-    }
-   
 }
 
-  }
-/*para ocultar en vista mobile*/
-@media screen and (max-width: 640px) {
-    header ul li{
-        list-style-type: none;
-        display:none
-            
-          }
+
+/* main */
+main{
+    width: 100vw;    
+}
+.last-visit{
+    padding: 7px;
+    background-color: lightgray;
+}
+main section{   
+    background-color: lightgray;
+    padding-bottom: 20px;
+}
+.division{
+    border-top: solid 1px #929292;
+    width: 100%;
+}
+.price-box{
+    display: flex;
+}
+
+
+
+
+
+.prices{
+    font-size: 18px;
+    color:black
+}
+.discounts {
+    font-size: 16px;
+    color: #39b54a;
+}
+.fa-truck{  
+    font-size: 16px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: relative;
+    top: -15px;
+    left: 80%;
+    background-color: #fff;
+}
+.descriptions{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+
+main section article img{
+    
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+main section article{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: white;
+
+    
+}
+
+main section article div p{
+    margin: 5px 0px 3px 10px;
+    
+}
 
 @media(max-width: 360px){
-            .descriptions{
-                display: none;
-            }
-        }
+    .descriptions{
+        display: none;
+    }
+}
+@media(min-width: 361px){
+    main section article{
+        box-shadow: 35px 18px 44px -35px rgba(0,0,0,0.64);
+
+    }
+}
+
     
 
 /*footer*/
