@@ -1,10 +1,27 @@
-@media (min-width: 361px) {
-    .description {
+@media (min-width: 361px){
+    header nav{ 
         display: block;
-        
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .products article {
+        width: 45%;
+    }
+
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
-@media (min-width: 769px) {
-
+@media (min-width: 769px){
+    .products article {
+        width: 22%;
+    }
 }
