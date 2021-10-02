@@ -1,4 +1,8 @@
 @media (min-width: 361px){
+    
+        
+    
+        
     header nav{ 
         display: block;
     }
@@ -17,15 +21,8 @@
 
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+        
 }
-
-@media (min-width: 769px){
-    .products article {
-        width: 22%;
-    }
-}
-@media (min-width: 361px){
     header nav{ 
         display: block;
     }
@@ -34,6 +31,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     .products article {
         width: 45%;
     }
@@ -43,7 +41,8 @@
     }
 
     main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        box-shadow: 35px 18px 44px -35px rgba(0,0,0,0.64);
+
     }
 }
 
@@ -51,4 +50,142 @@
     .products article {
         width: 22%;
     }
+
+    .main-header-top-bar{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-text{
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburger-btn{
+        display: none;
+    }
+    .main-navbar{        
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .left-navbar li{
+        margin: 0px 5px;
+    }
+    .rigth-navbar{
+        display: flex;
+        justify-content: space-around;
+    }
+    .rigth-navbar li{
+        margin: 0px 5px;
+    }
 }
+@media (min-width:769px){
+    header nav{
+        display:block;
+    }
+   .burger-menu{
+        display: none;
+    }
+    .menu-buscar{
+        width: 50%;
+    }
+   
+    main section article{
+        width:22%;
+        box-shadow:none
+    }
+    main section article:hover{
+     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .logo{
+     width: 300px;
+     margin: 20px 10px;
+     }
+     .top-header{
+         display: flex;
+         justify-content: space-between;
+     }
+     .compra-cuotas{
+         max-width: 350px;
+         text-align: right;
+         padding-top: 20px;
+     }
+ 
+     .main-navbar{
+         display:flex;
+         justify-content: space-between;
+     }
+     .main-navbar ul{
+         display:flex;
+     }
+     .main-navbar li{
+         margin: 0 5px;
+     }
+     main section article .descripcion-producto{
+         display: none;
+     }
+     main section article:hover .descripcion-producto{
+         display:block;
+     }
+   
+ }
+ 
+     
+@media (min-width: 1200px){
+    .main-header-top-bar , .main-navbar{
+        
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+    }
+    .header-text{
+        max-width: none;
+        font-size: 18px;
+    }
+    .main-navbar li{
+        font-size: 16px;
+        margin: 0px 16px;
+        font-weight: 400;
+    }
+}
+.logo{
+    width: 400px;
+    margin:0;
+}
+
+.top-header, .main-navbar{
+    max-width: 1200px;
+    margin: auto;
+}
+.top-header{
+    align-items: center;
+}
+
+.main-navbar{
+    margin-top: 50px;
+}
+.main-navbar li{
+    margin: 0 10px;
+}
+.main-navbar a{
+    font-size: 19px;
+}
+.compra-cuotas{
+    max-width: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+@media(max-width: 360px){
+    .descriptions{
+        display: none;
+    }
+}
+
+
+
+
+

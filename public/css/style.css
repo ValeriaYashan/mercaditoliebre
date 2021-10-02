@@ -1,6 +1,7 @@
 /*estilos generales*/
 
 @import "header.css";
+
 @import "main.css";
 @import "content.css";
 @import "media.css";
@@ -101,8 +102,11 @@ article div.main-article{
 }
 
 
+ 
 footer {
     height: 20vh;
+    
+    }
 }
 @import url('register.css');
 .form-search {

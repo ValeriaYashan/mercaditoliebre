@@ -2,11 +2,12 @@
 header {
     background-color: #EAC926;
     text-align:center
-    
+    height:justify
 }
 
 header div.logo{
   background-color: #eac980;
+    
 }
 
 header div.logo{
@@ -30,7 +31,7 @@ search-bar {
 }
 header nav {
     font-size: 12px;
-    display: none;
+    display:none;
     
 }
 

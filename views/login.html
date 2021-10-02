@@ -1,18 +1,22 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Bienvenidxs a MercadoLiebre</title>
+       <title>Bienvenid@s a MiMercaditoLiebre</title>
+     
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
         <header>
             <div class="top-header">
                 <div class="logo"> 
                     <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                    </div>
+                    <div>
+                    <marquee style="border:blue 3px SOLID"><p> Bienvenid@s a MiMercaditoLiebre</p></marquee>
                 </div>
                 <form action="search" class="form-search">
                     <input type="text" name="search" placeholder="Buscar productos, marcas y más">
@@ -37,9 +41,19 @@
                 <i class="fa fa-bars burger"></i>
             </div>
         </header>
-                </form>
-    
-
+       
+        <main>
+            <form method="POST">
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </form>
+        </main>
         <footer>
 
             <div>
@@ -50,8 +64,11 @@
             </div>
            <footer class="footer">
 
+            <!-- leyendas -->
             <div class="leyendas">
-    
+
+                
+      
             <div>
                 <i class="fas fa-gift"></i>
                 <h2>Envío gratis desde $ 2.500</h2>
