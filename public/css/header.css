@@ -2,24 +2,93 @@
 header {
     background-color: #EAC926;
 }
+
+header div.logo{
+    width: 50%;
+    max-height: 50%;
+    background-color: #eac980;
+}
+
+header div.logo{
+    padding: 10px;
+    width: 50%;
+}
+header div.top-header p{
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+}
 search-bar {
-    width: 310px;
-    height: 15px;
-    display: inline-block;
+    width: 400px;
+    height: 20px;
+    display: inline;
     background-color: #eaeaea;
     border: solid 0.5px black;
 }
 header nav {
     font-size: 12px;
+    display: none;
 }
+
 header nav ul {
     list-style-type: none;
     
 }
-a {
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eac980;
+ }
+                        
+li {
+    float: left;
+    }
+                        
+    li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: black;
+                        }
+                        
+    li a:hover {
+    background-color: blue;
+    }
+                       
+/*sin subrayado y color de fuente y saco bullets*/
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
 }
+
+header ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    width: 60px;
+    color: blue;
+    background-color: #dddddd;
+}
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
 div.burger-menu{
     text-align: center;
 }
@@ -31,3 +100,5 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     padding: 10px;
 }
+
+
