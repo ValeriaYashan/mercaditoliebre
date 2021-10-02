@@ -10,7 +10,7 @@ header div.logo{
 }
 
 header div.logo{
-    padding: 15px;
+    padding: 35px;
     column-width: 140px;
     position:absolute;
 }
@@ -22,7 +22,7 @@ header div.top-header p{
 }
 search-bar {
     width: 400px;
-    height: 50px;
+    height: 100px;
     display: inline;
     background-color: #eaeaea;
     border: solid 0.5px black;
@@ -45,6 +45,7 @@ header nav ul {
     overflow:auto;
     background-color: #eac980;
     display:inline-block
+    flex-wrap:wrap ;
  }
                         
 li {
