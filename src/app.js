@@ -1,4 +1,4 @@
-const express = require ('express');
+const express = require ('express')
 const app = express ();
 const path = require ('path');
 
@@ -22,6 +22,15 @@ app.get('/login', (req,res)=>{
 app.post('/login', (req,res)=>{
     res.sendFile (path.resolve(__dirname,'./views/logged.html'));
 })
+
+app.set('view engine','ejs');
+app.set('views','./carpeta=de=vistas');
+
+app.get ('/', (req,res)=>{
+    res.render('index')
+});
+
+app.use (express.static('public'));
 
 app.listen(process.env.PORT || 3000, ()=>{
     console.log('Servidor funcionando');
