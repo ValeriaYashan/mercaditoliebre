@@ -32,7 +32,12 @@ Pie de página:
 ● Los íconos tienen un tamaño de 2em y un margen inferior de separación de 10
 píxeles.
 
-
+-Rotación del camioncito 90º
 
 /*Heroku*/
 $ git push heroku main
+
+Proximas tareas
+-Armar vista de error al ir a enlace equivocado(pasarlo al vivero)
+-Armar formulario para crear y actualizar los productos (pasarlo al vivero)
+-Multer

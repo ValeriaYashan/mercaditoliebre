@@ -1,4 +1,4 @@
-*{   
+*{   /*selector universal*/
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -55,15 +55,15 @@ body{
 
 
 
-h3{
+h3{/*selector de etiqueta*/
     font-size: 24px;
 }
 
 p{
-    font-size: 12px;
+    font-size: 12px; /*atributo....propiedad:valor*/
 }
 
-div.last-visit,
+div.last-visit,  /*selectores agrupados*/
 div.offers{
     display: flex;
     flex-wrap: wrap;
@@ -191,8 +191,8 @@ h4 {
 }
 */
 
-/* Icono camion */
-main section article i {
+/* Icono camion *//*regla{ propiedad: valor}*/
+main section article i {  
     display: block;
     font-size: 16px;
     padding: 5px;
