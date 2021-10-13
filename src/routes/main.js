@@ -22,4 +22,4 @@ router.get('/profileUser',usersController.profileUser);
 
 
 
-module.exports = router;
+module.exports = productsController;

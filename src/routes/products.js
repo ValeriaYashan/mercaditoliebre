@@ -1,9 +1,10 @@
-const { Router } = require('express');
-const productosController= require('../controllers/productosController');
-router.get('/', productosController.index);
+const express= require('express');
+const router = express.Router();
+const productsController= require('../controllers/productsController');
+router.get('/', productsController.index);
 
 /*multer*/
-const multer=require ('multer');
+/*const multer=require ('multer');
 multer.diskStorage({
     destination : (req, file, cb) => {
      cb(null, './public/images/avatars');
@@ -13,4 +14,7 @@ multer.diskStorage({
             '${Date.now()}_img_'${path.extname(file.originalname)}');
       }
     })
-    const uploadFile=multer({storage});
+    const uploadFile=multer({storage});*/
+
+    
+module.exports = router;
