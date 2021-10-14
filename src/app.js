@@ -12,6 +12,23 @@ app.set('views', path.resolve(__dirname, 'views'));
 app.use(express.static(path.resolve(__dirname, '../public')));
 
 
+/*ir a los fomrularios probando*/
+
+app.get('/register', (req,res)=>{
+    res.render ('register');
+})
+
+app.get('/login', (req,res)=>{
+    res.render('login')
+})
+
+app.post('/register', (req,res)=>{
+    res.render ('registered');
+})
+
+app.post('/login', (req,res)=>{
+    res.render ('logged');
+})
 
 
 /* Routes */
