@@ -1,0 +1,51 @@
+form {
+    margin: 15px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registrate {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 3px;
+    padding: 10px;
+}
+
+.registrate label {
+    width: 100%;
+}
+.registrate input {
+    width: 100%;
+    transition: border 2s;
+}
+.registrate input:focus {
+    border: aqua 5px solid;
+    outline: none;
+}
+.registrate input:hover {
+    border: blue 5px solid;
+}
+
+.enviar {
+    background-color: grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.enviar:hover {
+    background-color: green;
+    color: indigo;
+}
+
+.borrar {
+    background-color: red;
+}
+
+@media (min-width:768px) {
+    .form-control {
+        margin: 0 auto;
+        width: 500px;
+        border-radius: 2%;
+    }
+}

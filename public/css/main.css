@@ -1,0 +1,92 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+* {
+    font-family: Roboto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ebebeb;
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 12px;
+}
+/* main */
+main{
+    width: 100vw;    
+}
+.last-visit{
+    padding: 7px;
+    background-color: lightgray;
+}
+main section{   
+    background-color: lightgray;
+    padding-bottom: 20px;
+}
+.division{
+    border-top: solid 1px #929292;
+    width: 100%;
+}
+.price-box{
+    display: flex;
+}
+
+.prices{
+    font-size: 18px;
+    color:black
+}
+.discounts {
+    font-size: 16px;
+    color: #39b54a;
+   
+}
+.fa-truck{  
+    font-size: 16px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: relative;
+    top: -15px;
+    left: 80%;
+    background-color: #fff;
+}
+.descriptions{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+main section article img{
+    
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+main section article{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: white;
+
+    
+}
+
+main section article div p{
+    margin: 5px 0px 3px 10px;
+    
+}
+/*banner*/
+div img.banner{
+    width: 100vw;
+    
+}
